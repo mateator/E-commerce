@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: solid 1px #CCCCCC;
+
+  &__content {
+    width: 85%;
+    display: grid;
+    padding: 0.5rem 0 0.5rem 0;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 3.5rem;
+
+    .logo {
+      text-align: center;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .searcher {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem 0 0.5rem 0;
+      justify-content: center;
+      display: flex;
+
+      &__input {
+        height: 100%;
+        width: 70%;
+        box-sizing: border-box;
+        font-size: 1.25rem;
+      }
+
+    }
+
+    .cart {
+      justify-content: center;
+      font-size: 1.75rem;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
